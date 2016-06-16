@@ -1,1 +1,12 @@
+osx_image: xcode7.3
 language: objective-c
+cache: cocoapods
+podfile: Podfile
+before_install:
+- gem install cocoapods
+- pod install
+script:
+- set -o pipefail && xcodebuild test -workspace FizzBuzz.xcworkspace -scheme FizzBuzz -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+notifications:
+  slack:
+    secure: SHY5EuqZLzDcZkKs2jdbDGDqgAL7SXgDEoF8apiY5FKBQBldOyCC3YkeM8KALeQ2wwMyQcQXMnX60vEFl8EnPiQv3qSClL8otZj39cZ9711mSkMES265Zb8QMmYrSAhwxAwsDhjjIN4zv0ujavxcHfuQQjn4JHR+DVtnKKGiAo2cOQIQbeZpSdfL79JeBY+o+8RAglHy7MoTpRGAs/uwPTZvzq7Sapft8wx91AiDspj1gsGfubRpJZG9UF0G9nHAC4yFc6w1t70Mtoo1QITiK3fHmINUFPfN2roVmtasqvWvDS/4VuY5q4SZytKvuGEMQ04HDWenUhAdCvCbxL0dqHuX3cdVVgfCGXHK0Jszk3TuBZPYvWUt0dToJ/epolob3w8ff6jHyRkSSlsdf8145ZLYWkvl8i/fXB+45j0tdYpOfgcwZUxQtRmMfwPoPQyhEwv3L0PerP5TTIQEhkA8G9JwglNRqd5Pvi7XPmKG0J153BurgtNVxxh5LqeR3xqJL9mqYt9ETQx5Br+YDdCcn/T78acdxtje5iH8Ss0kO5uhzFsMJGNFXrn+X/OuzJttE8SkMVDK9vAnqzjihLptXPzii2N9QlH7byp5m9lyr/9V/oqQASP3+Dd8Cte9bva4GjWHQzIR317az4/VZ4/pLbWCncJDth0VHt+IM0x5mxU=
