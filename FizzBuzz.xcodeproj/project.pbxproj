@@ -17,6 +17,8 @@
 		5393D5131D12E1C000D1B15F /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393D5121D12E1C000D1B15F /* FizzBuzzUITests.swift */; };
 		53D51B3A1D1850650082FDCA /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D51B391D1850650082FDCA /* BrainTests.swift */; };
 		53D51B3C1D1853340082FDCA /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D51B3B1D1853340082FDCA /* Brain.swift */; };
+		53FED7CC1D1961B700E7DB3E /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FED7CB1D1961B700E7DB3E /* ViewControllerUnitTests.swift */; };
+		53FED7CE1D19631000E7DB3E /* UIInitializeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FED7CD1D19631000E7DB3E /* UIInitializeHelper.swift */; };
 		69FE22F15866ED0B38AD93A9 /* Pods_FizzBuzzTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE28597D5A74700EF09CD4D0 /* Pods_FizzBuzzTests.framework */; };
 		71463478537A491AEE550AC3 /* Pods_FizzBuzz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E116524E703B88D9DF87A485 /* Pods_FizzBuzz.framework */; };
 		EE1A1AAAB36EC36AFA3D7FB5 /* Pods_FizzBuzzUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8922CD4142BB3EE4D6367AE /* Pods_FizzBuzzUITests.framework */; };
@@ -59,6 +61,8 @@
 		5393D5141D12E1C000D1B15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53D51B391D1850650082FDCA /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 		53D51B3B1D1853340082FDCA /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		53FED7CB1D1961B700E7DB3E /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		53FED7CD1D19631000E7DB3E /* UIInitializeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIInitializeHelper.swift; sourceTree = "<group>"; };
 		659F672DF6EE26F855DB2299 /* Pods-FizzBuzz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzBuzz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FizzBuzz/Pods-FizzBuzz.debug.xcconfig"; sourceTree = "<group>"; };
 		C88571D8A648D30C11EAFE2E /* Pods-FizzBuzzTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzBuzzTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FizzBuzzTests/Pods-FizzBuzzTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE28597D5A74700EF09CD4D0 /* Pods_FizzBuzzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FizzBuzzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,8 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				53D51B391D1850650082FDCA /* BrainTests.swift */,
-				5393D5091D12E1C000D1B15F /* Info.plist */,
 				534907E71D186B550033A3F6 /* GameTests.swift */,
+				5393D5091D12E1C000D1B15F /* Info.plist */,
+				53FED7CB1D1961B700E7DB3E /* ViewControllerUnitTests.swift */,
+				53FED7CD1D19631000E7DB3E /* UIInitializeHelper.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -450,6 +456,8 @@
 			files = (
 				53D51B3A1D1850650082FDCA /* BrainTests.swift in Sources */,
 				534907E81D186B550033A3F6 /* GameTests.swift in Sources */,
+				53FED7CC1D1961B700E7DB3E /* ViewControllerUnitTests.swift in Sources */,
+				53FED7CE1D19631000E7DB3E /* UIInitializeHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
