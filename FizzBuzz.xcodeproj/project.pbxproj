@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		534907E81D186B550033A3F6 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534907E71D186B550033A3F6 /* GameTests.swift */; };
+		534907EA1D186BEB0033A3F6 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534907E91D186BEB0033A3F6 /* Game.swift */; };
 		5393D4F31D12E1C000D1B15F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393D4F21D12E1C000D1B15F /* AppDelegate.swift */; };
 		5393D4F51D12E1C000D1B15F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393D4F41D12E1C000D1B15F /* ViewController.swift */; };
 		5393D4F81D12E1C000D1B15F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5393D4F61D12E1C000D1B15F /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		135999D7B1D12F800F824222 /* Pods-FizzBuzzUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzBuzzUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FizzBuzzUITests/Pods-FizzBuzzUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C724CE429373340CE4DEEB2 /* Pods-FizzBuzzUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzBuzzUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FizzBuzzUITests/Pods-FizzBuzzUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3BA78782D0CFA73896A4A1E1 /* Pods-FizzBuzzTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FizzBuzzTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FizzBuzzTests/Pods-FizzBuzzTests.debug.xcconfig"; sourceTree = "<group>"; };
+		534907E71D186B550033A3F6 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		534907E91D186BEB0033A3F6 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5393D4EF1D12E1C000D1B15F /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5393D4F21D12E1C000D1B15F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5393D4F41D12E1C000D1B15F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 				5393D4FB1D12E1C000D1B15F /* LaunchScreen.storyboard */,
 				5393D4FE1D12E1C000D1B15F /* Info.plist */,
 				53D51B3B1D1853340082FDCA /* Brain.swift */,
+				534907E91D186BEB0033A3F6 /* Game.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			children = (
 				53D51B391D1850650082FDCA /* BrainTests.swift */,
 				5393D5091D12E1C000D1B15F /* Info.plist */,
+				534907E71D186B550033A3F6 /* GameTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -434,6 +440,7 @@
 				5393D4F51D12E1C000D1B15F /* ViewController.swift in Sources */,
 				53D51B3C1D1853340082FDCA /* Brain.swift in Sources */,
 				5393D4F31D12E1C000D1B15F /* AppDelegate.swift in Sources */,
+				534907EA1D186BEB0033A3F6 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53D51B3A1D1850650082FDCA /* BrainTests.swift in Sources */,
+				534907E81D186B550033A3F6 /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
