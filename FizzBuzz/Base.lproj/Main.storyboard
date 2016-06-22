@@ -32,28 +32,44 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TL5-wp-Ip6">
                                         <rect key="frame" x="0.0" y="0.0" width="230.5" height="230.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="NumberButton"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
                                         <state key="normal" title="0" backgroundImage="ButtonBorder">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfq-6a-GdY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q4-8J-QSw">
                                         <rect key="frame" x="249" y="0.0" width="230.5" height="230.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="FizzButton"/>
                                         <state key="normal" image="Champagne" backgroundImage="ButtonBorder">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ty3-Eu-GMb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bY-R3-n6M">
                                         <rect key="frame" x="0.0" y="249" width="230.5" height="230.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="BuzzButton"/>
                                         <state key="normal" image="Lightning" backgroundImage="ButtonBorder">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sXT-tc-TVE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDB-Md-U1i">
                                         <rect key="frame" x="249" y="249.5" width="230.5" height="230.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="FizzBuzzButton"/>
                                         <state key="normal" image="Space" backgroundImage="ButtonBorder">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bHU-nd-jSb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -96,6 +112,11 @@
                             <constraint firstItem="3wa-SY-FnE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hT9-h9-Bb8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buzzButton" destination="9bY-R3-n6M" id="3fJ-xl-BGE"/>
+                        <outlet property="fizzButton" destination="3q4-8J-QSw" id="rLs-in-2HC"/>
+                        <outlet property="numberButton" destination="TL5-wp-Ip6" id="99O-6u-Glg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

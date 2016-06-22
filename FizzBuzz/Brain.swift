@@ -23,20 +23,20 @@ class Brain {
         return isDivisibleBy(15, number: number)
     }
     
-    /// Checks if a given number is "Fizz", "Buzz" or "FizzBuzz".
-    func check(number: Int) -> String {
+    /// Checks if a given number is `Fizz`, `Buzz`, `FizzBuzz` or just a `Number`.
+    func check(number: Int) -> Move {
         switch number {
         case number where isDivisibleByFifteen(number):
-            return "FizzBuzz"
+            return .FizzBuzz
             
         case number where isDivisibleByThree(number):
-            return "Fizz"
+            return .Fizz
             
         case number where isDivisibleByFive(number):
-            return "Buzz"
+            return .Buzz
             
         default:
-            return "\(number)"
+            return .Number
         }
     }
     

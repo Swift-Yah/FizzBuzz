@@ -63,27 +63,27 @@ class BrainTests: XCTestCase {
     func testSayFizz() {
         let result = brain.check(3)
         
-        XCTAssertEqual(result, "Fizz")
+        XCTAssertEqual(result, Move.Fizz)
     }
     
     /// It will check if when the given number is divisible by five the result is Buzz.
     func testSayBuzz() {
         let result = brain.check(5)
         
-        XCTAssertEqual(result, "Buzz")
+        XCTAssertEqual(result, Move.Buzz)
     }
     
     /// It will check if the value fifteen is resulting in FizzBuzz.
     func testSayFizzBuzz() {
         let result = brain.check(15)
         
-        XCTAssertEqual(result, "FizzBuzz")
+        XCTAssertEqual(result, Move.FizzBuzz)
     }
     
     /// It will check if the value returned when the value is not divisible by 3, 5, both or neither is the number itself.
     func testSayOneString() {
         let result = brain.check(1)
         
-        XCTAssertEqual(result, "1")
+        XCTAssertEqual(result, Move.Number)
     }
 }
