@@ -17,10 +17,10 @@ class Game {
     // MARK: Public functions.
     
     /// Checks if the next `move` passed is correct and increment the user's score.
-    func play(move: String) -> (right: Bool, score: Int) {
+    func play(move: Move) -> (right: Bool, score: Int) {
         score += 1
         
-        let result = brain.check(score) == move
+        let result = (brain.check(score) == move)
         
         if !result {
             score -= 1

@@ -41,7 +41,7 @@ class ViewControllerUnitTests: XCTestCase {
     
     /// Checks if after first movement the new game score was incremented for one point.
     func testFirstMoveIncrementsScore() {
-        viewController.play("1")
+        viewController.play(.Number)
         
         let result = viewController.gameScore
         
@@ -50,8 +50,8 @@ class ViewControllerUnitTests: XCTestCase {
     
     /// Checks if when is done two movementens the score continues to get incremented.
     func testTwoMovesIncrementsScore() {
-        viewController.play("1")
-        viewController.play("2")
+        viewController.play(.Number)
+        viewController.play(.Number)
         
         let result = viewController.gameScore
         
@@ -67,7 +67,7 @@ class ViewControllerUnitTests: XCTestCase {
     func testIfFizzMoveIsWorking() {
         viewController.game.score = 2
         
-        let result = viewController.play("Fizz")
+        let result = viewController.play(.Fizz)
         
         XCTAssertTrue(result)
     }
@@ -76,7 +76,7 @@ class ViewControllerUnitTests: XCTestCase {
     func testIfBuzzMoveIsWorking() {
         viewController.game.score = 4
         
-        let result = viewController.play("Buzz")
+        let result = viewController.play(.Buzz)
         
         XCTAssertTrue(result)
     }
@@ -85,7 +85,7 @@ class ViewControllerUnitTests: XCTestCase {
     func testIfFizzBuzzMoveIsWorking() {
         viewController.game.score = 14
         
-        let result = viewController.play("FizzBuzz")
+        let result = viewController.play(.FizzBuzz)
         
         XCTAssertTrue(result)
     }
@@ -94,7 +94,7 @@ class ViewControllerUnitTests: XCTestCase {
     func testIfWrongMoveScoreNotIncremented() {
         let previousScore = viewController.gameScore
         
-        viewController.play("Fizz")
+        viewController.play(.Fizz)
         
         let score = viewController.gameScore
         
